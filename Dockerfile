@@ -33,4 +33,6 @@ ADD consul.conf /etc/nginx/conf.d/consul.conf
 ADD app.py app.py
 ADD Procfile Procfile
 
+ENV PYTHONIOENCODING="utf-8" GOMAXPROCS=2
+
 CMD honcho start
