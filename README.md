@@ -10,6 +10,7 @@ Including, but not limited to:
   * consul_ui
   * cassandra-driver
   * python-consul
+  * honcho
 
 ----
 
