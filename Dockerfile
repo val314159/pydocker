@@ -1,10 +1,8 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install -y libev4 libev-dev python git wget telnet python-dev python-pip python-virtualenv unzip nginx curl
+RUN apt-get install -y libev4 libev-dev python git wget telnet python-dev python-pip python-virtualenv unzip nginx curl python-gevent
 RUN pip install -U pip setuptools
-RUN pip install honcho gevent cassandra-driver
-RUN pip install gunicorn
-RUN pip install tornado
+RUN pip install honcho cassandra-driver gunicorn tornado
 
 WORKDIR /root
 RUN wget https://dl.bintray.com/mitchellh/consul/0.5.1_linux_amd64.zip
