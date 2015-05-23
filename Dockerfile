@@ -33,4 +33,4 @@ ADD Procfile Procfile
 
 ENV PYTHONIOENCODING="utf-8" GOMAXPROCS=2
 
-CMD honcho start
+CMD ["honcho","start"]
